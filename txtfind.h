@@ -1,6 +1,6 @@
-int getLine(char s[]);
+int getLine(char str[]);
 
-int getWord(char w[]);
+int getWord(char word[]);
 
 int substring(char *str1, char *str2);
 
