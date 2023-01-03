@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include "txtfind.h"
 
-#define word 30
+#define WORD 30
 
 int main() {
-    char in;
-    char s[word];
-    getword(s);
-    scanf("%c\n", &in);
-    if (in == 'a') {
-        print_lines(s);
-    }
-    if (in == 'b') {
-        print_similar_words(s);
-    }
+    char word[WORD] = {0};
+    getword(word);
+    char function[WORD] = {0};
+    getword(function);
+    if (function[0] == 'a')
+        print_lines(word);
+    if (function[0] == 'b')
+        print_similar_words(word);
     return 0;
 }
