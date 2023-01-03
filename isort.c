@@ -29,17 +29,3 @@ void insertion_sort(int *arr, int len)
 		*(arr + hole + 1) = value ;
 	}
 }
-
-//int main(){
-//    int MAX_INPUT_ARRAY = 10;
-//    int arr[MAX_INPUT_ARRAY] = {};
-//    for (int i = 0; i < MAX_INPUT_ARRAY; ++i) {
-//         scanf(" %d",&*(arr+i));
-   //  }
-//     insertion_sort(arr, MAX_INPUT_ARRAY);
-//     for (int i = 0; i < MAX_INPUT_ARRAY-1; ++i) {
-//         printf("%d,",*(arr+i));
-//     }
-//     printf("%d\n",*(arr+MAX_INPUT_ARRAY-1));
-
-// }

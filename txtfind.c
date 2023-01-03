@@ -7,7 +7,6 @@
 #define LINES 250
 #define WORDS 30
 
-//return num of char in the line
 int get_line(char s[])
 {
     int numOfChar = 0;
@@ -22,7 +21,6 @@ int get_line(char s[])
     return numOfChar; 
 }
 
-//returns number of characters in a text
 int getword(char w[])
 {
     int numOfChar = 0;
@@ -38,8 +36,6 @@ int getword(char w[])
 
 int substring( char * str1, char * str2)
 {
-    //the word str2 is the checked on str1
-    
     int num2 =0;
     int num1 = 0;
 
@@ -69,7 +65,6 @@ int substring( char * str1, char * str2)
 
 int similar (char *s, char *t, int n)
 {
-    //s is the word being searched on
     int num2 = 0;
     int num1 = 0;
     while(*(s+num2)!='\0')
@@ -121,20 +116,3 @@ void print_similar_words(char * str)
        
     }
 }
-
-// int main()
-//{
-//    char word [WORD];
-//    scanf("%s", word);
-
-//    char c;
-    
-//    scanf(" %c", &c);
-//    scanf(" ");
-//    if(c == 'a'){
-       
-//        print_lines(word);}
-//    if(c == 'b'){print_similar_words(word);}
- //   return 0;
-//}
-
