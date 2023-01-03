@@ -4,16 +4,21 @@
 #define size 50
 
 int main() {
-    int i = 0;
-    int arr[size] = {0};
-    int num = 0;
-    for (i = 0; i < size; i++) {
-        printf("please enter a number, this number is %d/50 \n", i + 1);
-        scanf("%d", &num);
-        *(arr + i) = num;
+
+    int arr[size];
+
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+
     }
     insertion_sort(arr, size);
-    for (i = 0; i < size; i++) {
-        printf("%d,", *(arr + i));
+    for (int i = 0; i < size; i++) {
+        if (i < size - 1) {
+            printf("%d,", *(arr + i));
+        } else if (i == size - 1) {
+            printf("%d", *(arr + i));
+        }
     }
+    printf("\n");
+    return 0;
 }
