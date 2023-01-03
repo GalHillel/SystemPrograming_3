@@ -1,24 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
 #include "isort.h"
 
-#define size 50
+#define SIZE 50
 
 int main() {
 
-    int arr[size];
+    int arr[SIZE];
 
-    for (int i = 0; i < size; i++) {
-        scanf("%d", &arr[i]);
+    for (int i = 0; i < SIZE; i++)
+        scanf("%i", &arr[i]);
 
-    }
-    insertion_sort(arr, size);
-    for (int i = 0; i < size; i++) {
-        if (i < size - 1) {
+    insertion_sort(arr, SIZE);
+
+    for (int i = 0; i < SIZE; i++) {
+        if (i < SIZE - 1) {
             printf("%d,", *(arr + i));
-        } else if (i == size - 1) {
+        } else if (i == SIZE - 1) {
             printf("%d", *(arr + i));
         }
     }
+
     printf("\n");
+
     return 0;
 }
