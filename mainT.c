@@ -3,6 +3,7 @@
 
 #define WORD 30
 
+
 int main() {
     char word[WORD] = {0};
     getword(word);
