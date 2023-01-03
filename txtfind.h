@@ -1,11 +1,11 @@
-int get_line(char s[]);
+int getLine(char s[]);
 
-int getword(char w[]);
+int getWord(char w[]);
 
 int substring(char *str1, char *str2);
 
-int similar(char *s, char *t, int n);
+int similar(char *s, char *t);
 
-void print_lines(char *str);
+void printLines(char *str);
 
-void print_similar_words(char *str);
+void printSimilarWords(char *str);
