@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "txtfind.h"
 
-#define line 256
-#define word 30
+#define LINE 256
+#define WORD 30
+
 
 int get_line(char s[]) {
     int numOfChar = 0;
@@ -69,8 +70,7 @@ int similar(char *s, char *t, int n) {
 }
 
 void print_lines(char *str) {
-    char
-    line[line];
+    char line[LINE];
 
     while (get_line(line)) {
 
@@ -82,8 +82,7 @@ void print_lines(char *str) {
 }
 
 void print_similar_words(char *str) {
-    char
-    word[word];
+    char word[WORD];
 
     while (getword(word)) {
         if (similar(word, str, 1)) {
